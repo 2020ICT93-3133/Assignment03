@@ -6,6 +6,8 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 
 
 import Login from "./components/login";
+import Home from "./components/home";
+import Profile from "./components/Profile";
 
 
 export default function App() {
@@ -34,7 +36,16 @@ export default function App() {
               component={Login}
               options={{ title: "UoV Student Care" }}
             />
-           
+           <Stack.Screen
+              name="home"
+              component={Home}
+              options={{ title: "UoV Student Care" }}
+            />
+            <Stack.Screen
+              name="Profile"
+              component={Profile}
+              options={{ title: "UoV Student Care" }}
+            />
           </Stack.Navigator>
         </NavigationContainer>
       </PaperProvider>
