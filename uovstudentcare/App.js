@@ -12,7 +12,7 @@ export default function App() {
   const Stack = createNativeStackNavigator();
 
   return (
-    <View>
+    
     <SafeAreaProvider>
       <PaperProvider>
         <NavigationContainer>
@@ -39,7 +39,7 @@ export default function App() {
         </NavigationContainer>
       </PaperProvider>
     </SafeAreaProvider>
-    </View>
+    
   );
 }
 
