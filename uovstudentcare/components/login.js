@@ -12,7 +12,7 @@ import {
 } from "react-native";
 import { Button, Icon, TextInput } from "react-native-paper";
 
-import { students } from "../assets/StudentsDb";
+import { students } from "../assets/StudentDb";
 
 const Login = () => {
   const [data, setData] = useState({
@@ -47,7 +47,7 @@ const Login = () => {
     >
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <View style={styles.body}>
-          <Image source={require("../assets/logo.png")} style={styles.image} />
+          <Image source={require("../assets/logo.jpg")} style={styles.image} />
 
           <View style={styles.container}>
             <Text style={styles.h1}>Student Login</Text>
