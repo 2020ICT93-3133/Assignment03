@@ -1,21 +1,18 @@
 import React from "react";
 import { Image, StyleSheet, Text, View } from "react-native";
 import { Avatar, Card } from "react-native-paper";
-import { courses } from "../assets/StudentsDb";
+import { subjects } from "../assets/StudentDb";
 
 const Subjects = ({ student }) => {
-  const course = courses.find((c) => c.id === student.course_id);
-
+  const course= subjects.find((c) => c.id === student.course_id);
+  const marks= subjects.find((c) => c.id === student.course_id && c.id ===student.student_id);
   return (
     <View style={styles.view}>
-      <Image source={require("../assets/logo.png")} style={styles.image} />
+      <Image source={require("../assets/logo.jpg")} style={styles.image} />
 
       <Card style={{ margin: 20 }}>
         <Card.Content style={styles.cardContent}>
-          <Text style={styles.h1}>{course.name}</Text>
-          <Text style={{ textAlign: "center" }}>
-            Code: {course.course_code} | Dept: {course.department}
-          </Text>
+          
 
           <View
             style={{
@@ -26,12 +23,11 @@ const Subjects = ({ student }) => {
           />
 
           <Text style={{ fontWeight: "bold", marginTop: 20 }}>
-            Course Information
+            Marks
           </Text>
-          <Text>Code: {course.course_code}</Text>
-          <Text>Department: {course.department}</Text>
-          <Text>Duration: {course.duration}</Text>
-          <Text>Description: {course.description}</Text>
+          <Text>Code: {course.course_id}</Text>
+          <Text>Name: {course.name}</Text>
+          <Text>Marks: {marks.marks}</Text>
         </Card.Content>
       </Card>
     </View>

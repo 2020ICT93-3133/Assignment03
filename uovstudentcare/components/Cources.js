@@ -1,14 +1,14 @@
 import React from "react";
 import { Image, StyleSheet, Text, View } from "react-native";
 import { Avatar, Card } from "react-native-paper";
-import { courses } from "../assets/StudentsDb";
+import { courses } from "../assets/StudentDb";
 
 const Courses = ({ student }) => {
   const course = courses.find((c) => c.id === student.course_id);
 
   return (
     <View style={styles.view}>
-      <Image source={require("../assets/logo.png")} style={styles.image} />
+      <Image source={require("../assets/logo.jpg")} style={styles.image} />
 
       <Card style={{ margin: 20 }}>
         <Card.Content style={styles.cardContent}>

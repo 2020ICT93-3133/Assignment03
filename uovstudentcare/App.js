@@ -41,11 +41,7 @@ export default function App() {
               component={Home}
               options={{ title: "UoV Student Care" }}
             />
-            <Stack.Screen
-              name="Profile"
-              component={Profile}
-              options={{ title: "UoV Student Care" }}
-            />
+            
           </Stack.Navigator>
         </NavigationContainer>
       </PaperProvider>

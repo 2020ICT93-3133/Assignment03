@@ -5,7 +5,7 @@ import { Avatar, Card } from "react-native-paper";
 const Profile = ({ student }) => {
   return (
     <View style={styles.view}>
-      <Image source={require("../assets/logo.png")} style={styles.image} />
+      <Image source={require("../assets/logo.jpg")} style={styles.image} />
 
       <Card style={{ margin: 20 }}>
         <Card.Content style={styles.cardContent}>
